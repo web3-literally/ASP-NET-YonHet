@@ -1,0 +1,270 @@
+﻿@model MarketPlace.Models.RegisterViewModel
+
+@{
+    Layout = null;
+}
+
+@{
+    ViewBag.Title = "Register";
+    //Layout = "~/Views/Home/About.cshtml";
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+
+    </title>
+    <style type="text/css">
+        .style4 {
+            height: 24px;
+        }
+
+        .style5 {
+            height: 735px;
+        }
+
+        .style6 {
+            color: #669900;
+            font-size: x-large;
+        }
+
+        .style7 {
+            height: 278px;
+        }
+
+        #form1 {
+            background-color: #FFFFFF;
+        }
+
+        .style8 {
+            height: 822px;
+        }
+
+        .style9 {
+            height: 1px;
+        }
+
+        .register-input {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm("Register", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        //@Html.AntiForgeryToken()
+        <div style="height: 1109px">
+            <table cellpadding="1" cellspacing="1" align="center" class="BlueBorder" style="background: White; height: 1193px; width: 1114px;">
+                <tbody>
+                    <tr>
+                        <td class="style7">
+                            <style type="text/css">
+                                .style3 {
+                                    color: #669900;
+                                    font-size: xx-large;
+                                }
+
+                                .style4 {
+                                    width: 621px;
+                                }
+
+                                .style5 {
+                                    color: #C0C0C0;
+                                    font-size: xx-large;
+                                }
+
+                                .style6 {
+                                    color: #CCCC00;
+                                    font-size: xx-large;
+                                }
+                            </style>
+
+                            <p style="width: 1087px">
+                                <br>
+                                <input type="image" name="ctl00$Header$ImgLogo" id="ctl00_Header_ImgLogo" src="~/Images/Logo.jpg" style="height:101px;width:253px;">
+                                <strong>
+                                    <span class="style5">Yon</span><span class="style6">het </span><span class="style3">&nbsp;</span><span class="style5">Yookoo Market Place</span><span class="style3">
+                                    </span>
+                                </strong>&nbsp;
+                            </p>
+                            <table cellpadding="1" cellspacing="1" style="width: 98%">
+                                <tbody>
+                                    <tr>
+                                        <td class="style4">
+                                            <br>
+                                            <input type="submit" name="ctl00$Header$Button1" value="Shops" id="ctl00_Header_Button1" style="color:White;background-color:#3399FF;border-color:#3399FF;border-style:None;font-size:Larger;height:65px;width:148px;font-family: &#39;Century Gothic&#39;">
+                                            <input type="submit" name="ctl00$Header$Button2" value="Suppliers" id="ctl00_Header_Button2" style="color:White;background-color:#FF6600;border-color:#3399FF;border-style:None;font-size:Larger;height:65px;width:97px;font-family: &#39;Century Gothic&#39;; font-size: larger;">
+                                            <input type="submit" name="ctl00$Header$Button3" value="Whole Sale" id="ctl00_Header_Button3" style="color:White;background-color:#3399FF;border-color:#3399FF;border-style:None;font-size:Larger;height:65px;width:141px;font-family: &#39;Century Gothic&#39;">
+                                            <input type="submit" name="ctl00$Header$Button4" value="Contact" id="ctl00_Header_Button4" style="color:White;background-color:#CC00CC;border-color:#3399FF;border-style:None;font-size:Larger;height:65px;width:143px;font-family: &#39;Century Gothic&#39;; font-size: larger;">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </td>
+                                        <td width="40%" align="right">
+                                            Store by Name:&nbsp;<input name="ctl00$Header$txtSearch" type="text" id="ctl00_Header_txtSearch" style="border-color:#669900;height:29px;width:192px;" autocomplete="off">&nbsp;
+
+                                            <input type="submit" name="ctl00$Header$btnSearch" value="Search" id="ctl00_Header_btnSearch" style="color:White;background-color:#0099FF;border-style:None;font-family:Century Gothic;font-size:Larger;height:55px;width:192px;margin-left: 0px">
+                                            <br>
+                                            <br>
+                                            <a id="ctl00_Header_Login" class="BlueText" href="javascript:__doPostBack(&#39;ctl00$Header$Login&#39;,&#39;&#39;)" style="color:White;background-color:#3399FF;font-size:Larger;"> Login |</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: solid 2px Green;" class="style4">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style9">
+                            <table cellpadding="4" cellspacing="4" align="center" style="width: 60%">
+                                <tbody>
+                                    <tr>
+                                        <td align="center">
+                                            (Already have an account <a href="">Sign In</a>)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="ctl00_ContentPlaceHolder1_LabelEmail" class="BlackText" style="display:inline-block;width:200px;">Owner Email:</span>
+                                            @Html.EditorFor(model => model.OwnerMail, new { htmlAttributes = new { @class = "register-input" } })
+                                            <span id="ctl00_ContentPlaceHolder1_RFVUserEMail" style="color:Red;display:none;"></span><span id="ctl00_ContentPlaceHolder1_REVUserEMail" style="color:Red;display:none;"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="ctl00_ContentPlaceHolder1_Label1" class="BlackText" style="display:inline-block;width:200px;">Password:</span>
+                                            <input name="ctl00$ContentPlaceHolder1$TextBoxPassword" type="password" id="ctl00_ContentPlaceHolder1_TextBoxPassword" style="width:250px;">
+                                            <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator1" style="color:Red;display:none;"></span>
+                                            <span id="ctl00_ContentPlaceHolder1_RegularExpressionValidator1" style="display:none;"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="ctl00_ContentPlaceHolder1_Label2" class="BlackText" style="display:inline-block;width:200px;">Retype Password:</span>
+                                            <input name="ctl00$ContentPlaceHolder1$TextBoxRetypePassword" type="password" id="ctl00_ContentPlaceHolder1_TextBoxRetypePassword" style="width:250px;">
+                                            <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator2" style="color:Red;display:none;"></span>
+                                            <span id="ctl00_ContentPlaceHolder1_CVPassword" style="display:none;"></span>
+                                            <span id="ctl00_ContentPlaceHolder1_revPWDRange" style="display:none;"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="ctl00_ContentPlaceHolder1_Label3" class="BlackText" style="display:inline-block;width:200px;">Store Name:</span>
+                                            @Html.EditorFor(model => model.StoreName, new { htmlAttributes = new { @class = "register-input" } })
+                                            <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator3" style="color:Red;display:none;"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="ctl00_ContentPlaceHolder1_Label4" class="BlackText" style="display:inline-block;width:200px;">Web Link(Store Address):</span>
+                                            @Html.EditorFor(model => model.LinkUrl, new { htmlAttributes = new { @class = "register-input" } })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="ctl00_ContentPlaceHolder1_Label5" class="BlackText" style="display:inline-block;width:200px;">Store Description:</span>
+                                            <textarea name="ctl00$ContentPlaceHolder1$TextBoxComment" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_TextBoxComment" style="height:100px;width:430px;"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <span id="ctl00_ContentPlaceHolder1_lblPhotoSideHeading" class="BlackText" style="display:inline-block;width:200px;">Design Photo URL:</span>
+                                            <input name="ImageFile" type="file" width="300px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20px">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <input type="submit" value="Submit" class="flashit" style="font-size: 14pt; font-weight: bold; width: 170px;">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div id="ctl00_ContentPlaceHolder1_ValidationSummary1" style="display:none;">
+
+                            </div>
+
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #FFFFFF; border-bottom: solid 2px Green;" class="style8">
+
+
+                            <style type="text/css">
+                                .style1 {
+                                    color: #669900;
+                                    font-size: x-large;
+                                }
+
+                                .style2 {
+                                    color: #999999;
+                                    font-size: x-large;
+                                }
+                            </style>
+                            <p>
+                                <br>
+                                <span class="style1">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span><span class="style2">Yookoo</span>
+                            </p>
+                            <table id="ctl00_CoverouterUsers1_FreindList" cellspacing="0" style="width:100%;border-collapse:collapse;">
+                                <tbody>
+                                    @for (var i = 0; i < ((Model.StoreList.Count() - 1) / 5 + 1); i++)
+                                    {
+                                        <tr>
+                                            @for (var j = i * 5; j < ((i * 5 + 5) > Model.StoreList.Count() ? Model.StoreList.Count() : (i * 5 + 5)); j++)
+                                            {
+                                                <td>
+                                                    <table border="0" cellpadding="2" cellspacing="2" align="center" style="background-color: #f5f5f5">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" valign="top">
+                                                                    <a href=@Model.StoreList.ElementAt(j).LinkUrl>
+                                                                        <img src=@Model.StoreList.ElementAt(j).ImageUrl align="middle" border="0" width="250px" />
+                                                                    </a>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <h1>@Model.StoreList.ElementAt(j).StoreName</h1>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            }
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    }
+</body>
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
